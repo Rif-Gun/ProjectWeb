@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layouts/index');
-});
+Route::get('/', 'FrontController@home')->name('home');
+Route::get('blankpage', 'FrontController@blank')->name('blankpage');
+Route::get('aboutpage', 'FrontController@aboutPage')->name('aboutpage');
+
+
